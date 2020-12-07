@@ -9,9 +9,9 @@ import requests
 def locate_url(user_emotion):
 
     file_path = "url/"
-    emotions = ["Happy", "Sad", "Satisfying", "Anger",
-                "Peaceful", "Fear", "Excitement", "Depressed",
-                "Contentment", "Sorrowful"]
+    emotions = ["Happy", "Sad", "Satisfying", "Angry",
+                "Peaceful", "Fearful", "Excited", "Depressed",
+                "Content", "Sorrowful"]
 
     url_lst = []
     with open(file_path + "IMDB.txt") as f1, open(file_path + "RT.txt") as f2:
@@ -40,10 +40,10 @@ def rank_movies(movie_dict):
         for k in movie_dict.keys():
             if movie_dict[k][-1] == r:
                 ranked_dict[k] = movie_dict[k]
-    return ranked_dict
-
+    return ranked_dict 
+        
 # IMDB should be a single link
-def scrape_IMDB(IMDB, num):
+def scrape_IMDB(IMDB, num): 
     response = requests.get(IMDB)
     data = SOUP(response.text, 'lxml')
 
@@ -55,7 +55,7 @@ def scrape_IMDB(IMDB, num):
 
     for movie in data.findAll('div', class_= "lister-item-content"):
         # title
-        title = movie.find("a", attrs = {"href" : re.compile(r'\/title\/tt+\d*\/')})
+        title = movie.find("a", attrs = {"href" : re.compile(r'\/title\/tt+\d*\/')}) 
         title = str(title).split('">')[1].split('</')[0]
         IMDB_dict[title] = []
         title_lst.append(title)
@@ -64,14 +64,14 @@ def scrape_IMDB(IMDB, num):
         if grading != None:
             grading = str(grading).split('">')[1].split('</')[0]
         else:
-            grading = "Grading information is not found"
+            grading = "N/A"
         IMDB_dict[title].append(grading)
         # runtime
         length = movie.find('span', class_ = "runtime")
         if length != None:
             length = str(length).split('">')[1].split('</')[0]
         else:
-            length = "Film's length is not found"
+            length = "N/A"
         IMDB_dict[title].append(length)
 
     # rating
@@ -111,13 +111,13 @@ def scrape_rt(RT, num):
             RT_dict[title] = []
             title_lst.append(title) #100
 
-        # (optional) numbers of reviews:
+        ## (Do not run) numbers of reviews:
         # num_reviews = movie.find('td', class_ = "right hidden-xs")
         # if num_reviews != None:
         #     num_reviews = int(str(num_reviews).split('">')[1].split('</')[0]) #100
         #     RT_dict[title].append(num_reviews)
 
-    # grading and runtime information are inside movie profile link
+    # grading and runtime information are inside movie profile links
     for title, rel_link in zip(title_lst, rel_lst[:12]): #only 12 movies needed
         link = "https://www.rottentomatoes.com/" + rel_link
         response = requests.get(link)
@@ -131,9 +131,6 @@ def scrape_rt(RT, num):
             elif movie_label == "Runtime:":
                 runtime_info = div_tag.find('div', {'class': 'meta-value'}).text
                 runtime_info = runtime_info.replace("\n","").replace(" ", "")
-
-                # transform runtime into the same scale as IMDB rating (in minutes)
-                runtime_info = str(int(runtime_info[0]) * 60 + (int(runtime_info[2:-1]))) + " min"
 
                 RT_dict[title].append(runtime_info)
     # rating
@@ -149,30 +146,4 @@ def scrape_rt(RT, num):
 
     return ranked_dict
 
-""" getting movies based on numbers of emotions were chosen by user from the GUI
-"""
-
-user_emotion = ["Happy", "Sad"]
-url_lst = locate_url(user_emotion)
-movie_dict = {}
-for url in url_lst:
-    if "www.imdb.com" in url:
-        if len(user_emotion) == 1:
-            movie_dict.update(scrape_IMDB(url, 12))
-        elif len(user_emotion) == 2:
-            movie_dict.update(scrape_IMDB(url, 6))
-        elif len(user_emotion) == 3:
-            movie_dict.update(scrape_IMDB(url, 4))
-    elif "www.rottentomatoes.com" in url:
-        if len(user_emotion) == 1:
-            movie_dict.update(scrape_rt(url, 12))
-        elif len(user_emotion) == 2:
-            movie_dict.update(scrape_rt(url, 6))
-        elif len(user_emotion) == 3:
-            movie_dict.update(scrape_rt(url, 4))
-
-movie_dict = rank_movies(movie_dict)
-
-
-
-
+    
