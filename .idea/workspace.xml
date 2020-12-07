@@ -69,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607204350139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Script">
+      <created>1607312785630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607312785630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,12 +95,13 @@
     <MESSAGE value="Adding interface and scraper to the program" />
     <MESSAGE value="Update scripts" />
     <MESSAGE value="Update movie page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update movie page" />
+    <MESSAGE value="Update Script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Script" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="146" key="Vcs.Push.Dialog.v2" timestamp="1607204352889">
+    <state x="347" y="146" key="Vcs.Push.Dialog.v2" timestamp="1607312787445">
       <screen x="0" y="23" width="1440" height="792" />
     </state>
-    <state x="347" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.792@0.23.1440.792" timestamp="1607204352889" />
+    <state x="347" y="146" key="Vcs.Push.Dialog.v2/0.23.1440.792@0.23.1440.792" timestamp="1607312787445" />
   </component>
 </project>
