@@ -4,6 +4,12 @@
 ## CS 410: Final Project 
 
 ### Overview
-> This is a collaborative work done by Vivian Yu(https://github.com/vilavivida) and Chenyu Zhao(https://github.com/chenyuzhao98). 
+> This is a collaborative work done by Vivian Yu (https://github.com/vilavivida) and Chenyu Zhao (https://github.com/chenyuzhao98). 
 
-> This is a Python-based movie recommendation system that implemented text-retrieval techniques and Graphical User Interface. One special thing about this system is that its recommendations were tailored around users' emotion of the moment. There are so many existing movie recommender systems available on the market, but only small number of them were designed based on users' psychological needs. Therefore, the main objective of this project is to fill this gap.<br>
+> This is a Python-based movie recommendation system that implemented text-retrieval techniques and Graphical User Interface. One special thing about this system is that its recommendations were tailored around users' emotion of the moment. There are so many existing movie recommender systems available on the market, but only a small number of them were designed based on users' psychological needs. The main objective of this project is to fill this gap. <br>
+
+### Emotion associated with Genre of Movie
+
+There are **8** classes of emotion the system presented to users to choose from. These are **5** postive emotions *("Happy", "Satisfying", "Peaceful", "Excited", "Content")* and **5** negative emotions *("Sad", "Angry", "Fearful", "Depressed", "Sorrowful)*. Here, these are taken as inputs from the interface: 
+
+[Screen-Shot-2020-12-09-at-3-27-42-PM.png](https://postimg.cc/ns710phP)
