@@ -10,10 +10,19 @@
 
 ### Emotion associated with Genre of Movie
 
-There are **10** classes of emotion the system presented to users to choose from. These are **5** postive emotions *("Happy", "Satisfying", "Peaceful", "Excited", "Content")* and **5** negative emotions *("Sad", "Angry", "Fearful", "Depressed", "Sorrowful)*. Here, these are taken as inputs from the GUI interface we built through tkinter: 
+There are **10** categories of emotion the system presented to users to choose from. These are **5** postive emotions *("Happy", "Satisfying", "Peaceful", "Excited", "Content")* and **5** negative emotions *("Sad", "Angry", "Fearful", "Depressed", "Sorrowful)*. Here, these are taken as inputs from the GUI interface we built through tkinter: 
 
 <a href='https://postimg.cc/ns710phP' target='_blank'><img src='https://i.postimg.cc/s2H0f2ds/Screen-Shot-2020-12-09-at-3-27-42-PM.png' width="640" height="480" border='0' alt='Screen-Shot-2020-12-09-at-3-27-42-PM'/></a>
 
-The correspondence of every emotion with genre of movies are designed as below:
-Happy - Horror
+The correspondence of every emotion with genre of movies are set up as below:
 
+*Happy - Horror
+Sad - Drama
+Satisfying - Animation
+Angry - Romance
+Peaceful - Fantasy
+Fearful - Adventure
+Excited - Crime
+Depressed - Comedy
+Content - Mystery
+Sorrowful - Action*
