@@ -26,5 +26,14 @@ There are **10** categories of emotion the system presented to users to choose f
  - Content - Mystery <br/>
  - Sorrowful - Action <br/>
  
-Based on the input emotion, the system is going to be selected from the corresponding genre based on their ratings given by two websites: **IMDB and Rotten Tomatoes**. The reason why we are collecting movie information from both websites is that we believe the system is able to capture a more full-scaled opinions from movie lovers. 
+Based on the input emotion, the system is going to be selected from the corresponding genre based on their ratings given by two websites: **IMDB** and **Rotten Tomatoes**. The reason why we are collecting movie information from both websites is that we believe the system is able to capture a more full-scaled opinions from movie lovers. 
+
+### Application of Crawling
+
+Because we intend to scrape two websites with different web structure, we had two crawlers to extract movie information. Check out `scraper.py` for more details. Here are two example movie page of IMDB and Rotten Tomatoes: 
+**IMDB** and **Rotten Tomatoes**
+<p float="left">
+  <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XqhmY7TT/Screen-Shot-2020-12-09-at-4-43-36-PM.png' width="320" height="240" border='0' alt='Screen-Shot-2020-12-09-at-4-43-36-PM'/></a>
+  <a href='https://postimg.cc/D461Jzyt' target='_blank'><img src='https://i.postimg.cc/Z0tHQBkK/Screen-Shot-2020-12-09-at-4-46-59-PM.png' width="320" height="240"  border='0' alt='Screen-Shot-2020-12-09-at-4-46-59-PM'/></a> 
+</p>
 
