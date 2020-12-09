@@ -17,9 +17,9 @@ class interface(object):
 
         # set up label
         self.label = Label(self.window, 
-              text = "Hey! Choose one or more words that best describe your emotion of the moment (up to 3):  ", 
-              font = ("Lucida Grande", 12),  
-              padx = 10, pady = 10) 
+              text = "Hey! Choose one or more words that best describe your emotion of the moment (up to 3)\n (Please do not close this window)",
+              font = ("Lucida Grande", 12),
+              padx = 10, pady = 10)
         self.label.pack()
 
         # set up listbox
@@ -35,7 +35,7 @@ class interface(object):
             # coloring alternative rows
             # orange represents postive emotions
             # blue represents negative emotions
-            self.listbox.itemconfig(emotion, bg = "orange2" if emotion % 2 == 0 else "RoyalBlue1") 
+            self.listbox.itemconfig(emotion, bg = "orange2" if emotion % 2 == 0 else "RoyalBlue1")
         self.listbox.select_set(0)
         self.listbox.focus_set()
 
@@ -59,4 +59,3 @@ if __name__ == "__main__":
     user_inputs = [] # obtain user selections
     for i in interface.result:
         user_inputs.append(interface.emotions[i])
-
