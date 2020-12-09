@@ -12,4 +12,4 @@
 
 There are **8** classes of emotion the system presented to users to choose from. These are **5** postive emotions *("Happy", "Satisfying", "Peaceful", "Excited", "Content")* and **5** negative emotions *("Sad", "Angry", "Fearful", "Depressed", "Sorrowful)*. Here, these are taken as inputs from the interface: 
 
-<a href='https://postimg.cc/ns710phP' target='_blank'><img src='https://i.postimg.cc/s2H0f2ds/Screen-Shot-2020-12-09-at-3-27-42-PM.png' border='0' alt='Screen-Shot-2020-12-09-at-3-27-42-PM'/></a><br /><a href='https://postimages.org/app' width="800" align="center" >
+<a href='https://postimg.cc/ns710phP' target='_blank'><img src='https://i.postimg.cc/s2H0f2ds/Screen-Shot-2020-12-09-at-3-27-42-PM.png' border='0' alt='Screen-Shot-2020-12-09-at-3-27-42-PM'/></a><br /><a href='https://postimages.org/app' width="500" align="center" >
