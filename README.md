@@ -25,3 +25,6 @@ There are **10** categories of emotion the system presented to users to choose f
  - Depressed - Comedy <br/>
  - Content - Mystery <br/>
  - Sorrowful - Action <br/>
+ 
+Based on the input emotion, the system is going to be selected from the corresponding genre based on their ratings given by two websites: **IMDB and Rotten Tomatoes**. The reason why we are collecting movie information from both websites is that we believe the system is able to capture a more full-scaled opinions from movie lovers. 
+
