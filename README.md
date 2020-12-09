@@ -30,9 +30,8 @@ Based on the input emotion, the system is going to be selected from the correspo
 
 ### Application of Crawling
 
-Because we intend to scrape two websites with different web structure, we had two crawlers to extract movie information. Check out `scraper.py` for more details. Here are two example movie page of IMDB and Rotten Tomatoes: <br/>
+Because we intend to scrape two websites with different web structure, we had two crawlers to extract movie information. Check out `scraper.py` for more details. Here are two example movie page of *IMDB* and *Rotten Tomatoes*: <br/>
 
-*IMDB and Rotten Tomatoes*
 <p float="left">
   <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XqhmY7TT/Screen-Shot-2020-12-09-at-4-43-36-PM.png' width="500" height="300" border='0' alt='Screen-Shot-2020-12-09-at-4-43-36-PM'/></a>
   <a href='https://postimg.cc/D461Jzyt' target='_blank'><img src='https://i.postimg.cc/Z0tHQBkK/Screen-Shot-2020-12-09-at-4-46-59-PM.png' width="500" height="300"  border='0' alt='Screen-Shot-2020-12-09-at-4-46-59-PM'/></a> 
