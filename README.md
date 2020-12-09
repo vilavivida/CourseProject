@@ -43,4 +43,3 @@ As you can see, comparing to IMDB, Rotten Tomatoes include the majority of movie
 
 ### Requirements
 This module requires the following modules:
-- 
