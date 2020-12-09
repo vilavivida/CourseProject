@@ -15,13 +15,13 @@ There are **10** categories of emotion the system presented to users to choose f
 <a href='https://postimg.cc/ns710phP' target='_blank'><img src='https://i.postimg.cc/s2H0f2ds/Screen-Shot-2020-12-09-at-3-27-42-PM.png' width="640" height="480" border='0' alt='Screen-Shot-2020-12-09-at-3-27-42-PM'/></a>
 
 **The correspondence of every emotion with genre of movies are set up as below: <br/>**
-*Happy - Horror <br/>
-Sad - Drama <br/>
-Satisfying - Animation <br/>
-Angry - Romance <br/>
-Peaceful - Fantasy <br/>
-Fearful - Adventure <br/>
-Excited - Crime <br/>
-Depressed - Comedy <br/>
-Content - Mystery <br/>
-Sorrowful - Action* <br/>
+            *Happy - Horror <br/>
+            Sad - Drama <br/>
+            Satisfying - Animation <br/>
+            Angry - Romance <br/>
+            Peaceful - Fantasy <br/>
+            Fearful - Adventure <br/>
+            Excited - Crime <br/>
+            Depressed - Comedy <br/>
+            Content - Mystery <br/>
+            Sorrowful - Action* <br/>
