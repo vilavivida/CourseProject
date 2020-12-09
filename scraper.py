@@ -1,6 +1,6 @@
 """
 this script designed to scrape off information from two major movie rating websites: IMDB and Rotten Tomatoes
-twelve movie ratings are obtained from each sources.
+twelve movie ratings are obtained from each source.
 """
 from bs4 import BeautifulSoup as SOUP
 import re
