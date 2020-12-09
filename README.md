@@ -12,7 +12,7 @@
 
 There are **10** classes of emotion the system presented to users to choose from. These are **5** postive emotions *("Happy", "Satisfying", "Peaceful", "Excited", "Content")* and **5** negative emotions *("Sad", "Angry", "Fearful", "Depressed", "Sorrowful)*. Here, these are taken as inputs from the GUI interface we built through tkinter: 
 
-<a href='https://postimg.cc/2V0sQF1K' target='_blank'><img src='https://i.postimg.cc/2V0sQF1K/pdfresizer-com-pdf-resize.png' border='0' width="640" height="480" alt='pdfresizer-com-pdf-resize'/></a>
+[![Screen-Shot-2020-12-09-at-3-27-42-PM.png](https://i.postimg.cc/s2H0f2ds/Screen-Shot-2020-12-09-at-3-27-42-PM.png)](https://postimg.cc/ns710phP)
 
 The correspondence of every emotion with genre of movies are designed as below:
 Happy - Horror
