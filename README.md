@@ -38,3 +38,9 @@ Because we intend to scrape two websites with different web structure, we had tw
 </p>
 
 As you can see, comparing to IMDB, Rotten Tomatoes include the majority of movie information in the movie profile link. Our crawler had to look up each link to capture intended information, such as *movie length, maturity grading, cast, etc*. Therefore, it does take the program some time to process it. 
+
+### Present Movie Information
+
+### Requirements
+This module requires the following modules:
+- 
