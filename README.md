@@ -51,7 +51,12 @@ Here is an example output of the program: <br/>
 
 ### Requirements
 Please check out `requirements.txt` for information.<br/>
-You can install all packages at one time using `$ pip install -r requirements.txt`.
+You can install all packages at once using `$ pip install -r requirements.txt`.
+
+### How to use?
+After making sure you have all packages installed, activate the program throug `main.py` using `python3`. 
+The program will start runnning immediately.
+**Please don't close the tkinter window the entire time.**
 
 
 
