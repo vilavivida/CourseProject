@@ -44,7 +44,7 @@ As you can see, comparing to IMDB, Rotten Tomatoes includes the majority of movi
 
 After users indicate their moods, the program is going to look up the corresponding link to the movie page and present movie informaiton as `Treevie`, which is a module included by the tkinter library displaying a hierarchical collection of items.<br/>
 Here is an example output of the program: <br/>
-<a href='https://postimg.cc/14PRxmrS' target='_blank'><img src='https://i.postimg.cc/6648vT78/Screen-Shot-2020-12-10-at-1-31-48-AM.png' border='0' width="640" height="450" alt='Screen-Shot-2020-12-10-at-1-31-48-AM'/></a>
+<a href='https://postimg.cc/14PRxmrS' target='_blank'><img src='https://i.postimg.cc/6648vT78/Screen-Shot-2020-12-10-at-1-31-48-AM.png' border='0' width="550" height="450" alt='Screen-Shot-2020-12-10-at-1-31-48-AM'/></a>
 
 ### Requirements
 This module requires the following modules:
