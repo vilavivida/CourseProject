@@ -54,8 +54,8 @@ Please check out `requirements.txt` for information.<br/>
 You can install all packages at once using `$ pip install -r requirements.txt`.
 
 ### How to use?
-After making sure you have all packages installed, activate the program throug `main.py` using `python3`. 
-The program will start runnning immediately.
+After making sure you have all packages installed, activate the program throug `main.py` using `python3`. <br/>
+The program will start runnning immediately.<br/>
 **Please don't close the tkinter window the entire time.**
 
 
