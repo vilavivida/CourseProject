@@ -50,7 +50,6 @@ Here is an example output of the program: <br/>
 **Note: not every movie has all information listed. If the crawler cannot find relevant information, it will automatically fill the space with "Not Found".**
 
 ### Requirements
-- [x] This module requires the following modules:<br/>
-Please check out `requirements.txt`.<br/>
-or information you can install all packages at once using `$ pip install -r requirements.txt`.
+Please check out `requirements.txt` for information.<br/>
+You can install all packages at one time using `$ pip install -r requirements.txt`.
 
