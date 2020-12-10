@@ -55,7 +55,7 @@ You can install all packages at once using `$ pip install -r requirements.txt`. 
 *Please use **Python 3**. Otherwise you will need to import tkinter.ttk separately because it is not a submodule of tkinter in Python2*
 
 ### How to use?
-After making sure you have all packages installed, activate the program throug `main.py` using `python3`. <br/>
+After making sure you have all packages installed, activate the program through `main.py`. <br/>
 The program will start runnning immediately.<br/>
 *Please don't close the tkinter window the entire time.*
 
