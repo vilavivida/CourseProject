@@ -47,9 +47,11 @@ Here is an example output of the program: <br/>
 
 <a href='https://postimg.cc/14PRxmrS' target='_blank'><img src='https://i.postimg.cc/6648vT78/Screen-Shot-2020-12-10-at-1-31-48-AM.png' border='0' width="590" height="450" alt='Screen-Shot-2020-12-10-at-1-31-48-AM'/></a>
 
-**Note: not every movie has all information listed. If the crawler cannot find relevant information, it will automatically fill the space with "Not Found".**
+**Note: Not every movie has all information listed. If the crawler cannot find relevant information, it will automatically fill the space with "Not Found".**
 
 ### Requirements
 Please check out `requirements.txt` for information.<br/>
 You can install all packages at one time using `$ pip install -r requirements.txt`.
+
+
 
