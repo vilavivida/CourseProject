@@ -52,7 +52,7 @@ Here is an example output of the program: <br/>
 ### Requirements
 Please check out `requirements.txt` for information.<br/>
 You can install all packages at once using `$ pip install -r requirements.txt`. <br/>
-*Please use Python 3 to use this program. Otherwise you will need to import tkinter.ttk separately because it is not a submodule of tkinter in Python2*
+*Please use **Python 3**. Otherwise you will need to import tkinter.ttk separately because it is not a submodule of tkinter in Python2*
 
 ### How to use?
 After making sure you have all packages installed, activate the program throug `main.py` using `python3`. <br/>
