@@ -33,8 +33,8 @@ Based on the input emotion, the system is going to be selected from the correspo
 Because we intend to scrape two websites with different web structure, we had two crawlers to extract movie information. Check out `scraper.py` for more details. Here are two example movie page of *IMDB* and *Rotten Tomatoes*: <br/>
 
 <p float="left">
-  <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XqhmY7TT/Screen-Shot-2020-12-09-at-4-43-36-PM.png' width="500" height="200" border='0' alt='Screen-Shot-2020-12-09-at-4-43-36-PM'/></a>
-  <a href='https://postimg.cc/D461Jzyt' target='_blank'><img src='https://i.postimg.cc/Z0tHQBkK/Screen-Shot-2020-12-09-at-4-46-59-PM.png' width="500" height="300"  border='0' alt='Screen-Shot-2020-12-09-at-4-46-59-PM'/></a> 
+  <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XqhmY7TT/Screen-Shot-2020-12-09-at-4-43-36-PM.png' width="450" height="250" border='0' alt='Screen-Shot-2020-12-09-at-4-43-36-PM'/></a>
+  <a href='https://postimg.cc/D461Jzyt' target='_blank'><img src='https://i.postimg.cc/Z0tHQBkK/Screen-Shot-2020-12-09-at-4-46-59-PM.png' width="450" height="250"  border='0' alt='Screen-Shot-2020-12-09-at-4-46-59-PM'/></a> 
 </p>
 
 As you can see, comparing to IMDB, Rotten Tomatoes include the majority of movie information in the movie profile link. Our crawler had to look up each link to capture intended information, such as *movie length, maturity grading, cast, etc*. Therefore, it does take the program some time to process it. 
