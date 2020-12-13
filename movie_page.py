@@ -26,6 +26,7 @@ class movie_page(Frame):
         # pop up the waiting page
         self.parent = parent
         self.parent.geometry("700x500")
+        self.parent.title("Double click on the movie you are most interested in. 🙅‍♀️❎🙅‍♂️Close the window when you are done.")
         self.parent.withdraw()
         waiting = Waiting_Page(self)
 
@@ -40,6 +41,8 @@ class movie_page(Frame):
         time.sleep(2)
         waiting.destroy()
         self.parent.deiconify()  # show the window again
+        self.selected_movie = [] # we are going to present summaries of selected movies
+
 
     def create_UI(self):
         pg = Treeview(self)
@@ -55,16 +58,33 @@ class movie_page(Frame):
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
+        self.treeview.bind("<Double-1>", self.OnDoubleClick)
+        # self.treeview.bind("<Return>", self.Quit)
+
     def load_table(self):
         for movie_title in self.movie_dict:
             movie_info = self.movie_dict[movie_title]
-            # some movies do not have grading and runtime information
-            if len(movie_info) == 2:
+
+            # In case some movies do not have all information provided
+            if len(movie_info) == 3:
                 movie_info.insert(0, "Not Found")
+            elif len(movie_info) == 2:
+                movie_info.insert(0, "Not Found")
+                movie_info.insert(1, "Not Found")
             elif len(movie_info) == 1:
                 movie_info.insert(0, "Not Found")
                 movie_info.insert(1, "Not Found")
+                movie_info.insert(2, "Not Found")
+
             self.treeview.insert('', 'end', text="{}".format(movie_title),
-                                 values=('{}'.format(movie_info[2]), '{}'.format(movie_info[1]),
-                                         '{}'.format(movie_info[0])))
+                                 values=('{}'.format(movie_info[3]), '{}'.format(movie_info[2]),
+                                         '{}'.format(movie_info[1])))
+    def OnDoubleClick(self, event):
+        self.item = self.treeview.identify('item', event.x, event.y)
+        self.selected_movie.append(self.treeview.item(self.item, "text"))
+
+    # def Quit(self, event):
+    #     self.parent.destroy()
+
+
 

@@ -1,6 +1,9 @@
 import interface
 from scraper import locate_url, rank_movies, scrape_IMDB, scrape_rt
 import movie_page
+from movie_summary import get_movie_summary
+from similarity_analyzer import find3MostSim
+import summary_page
 
 from tkinter import *
 
@@ -20,6 +23,7 @@ if __name__ == "__main__":
     user_emotion = user_inputs
     url_lst = locate_url(user_emotion)
     movie_dict = {}
+
     for url in url_lst:
         if "www.imdb.com" in url:
             if len(user_emotion) == 1:
@@ -41,6 +45,33 @@ if __name__ == "__main__":
     root = Tk()
     movie_page = movie_page.movie_page(root, movie_dict)
     root.mainloop()
+
+    # Cosine-Similarity analysis
+    userClicked = movie_page.selected_movie
+    userClicked = list(set(userClicked))
+    movieName = userClicked[0]
+
+    summary_list = get_movie_summary(movie_dict, movieName)
+
+    targetIndex = find3MostSim(movie_dict, summary_list)
+    targetMovies = []
+    targetMovieSummary = []
+    mainSummary = summary_list[1]
+
+    for i in targetIndex:
+        summary = summary_list[0][i]
+        targetMovieSummary.append(summary)
+        for key, value in movie_dict.items():
+            if summary == value[0]:
+                targetMovies.append(key)
+
+
+    # load summary page based on users' selection
+    SP = Tk()
+    Summary_Page = summary_page.Summary_Page(SP, targetMovies, targetMovieSummary, mainSummary)
+    SP.mainloop()
+
+
 
 
 
