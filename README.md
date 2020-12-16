@@ -5,7 +5,7 @@
 
 ### Team Introduction
 
-> A collaborative work is done by [Vivian Chuhan Yu (chuhany2)](https://github.com/vilavivida) and [Chenyu Zhao (chenyu5)](https://github.com/chenyuzhao98). Being a Psych major, Vivian applied her expertise in designing the connection between human emotions and movie genres. She is also responsible for designing the graphical user interface using tkinter, and presenting the information in Treeview. Chenyu is responsible for building the web scraper, designing the logistic regression algorithm, and implement the Cosine Similarity analysis. He is also responsible for writing the documentation and narrating the presentation.
+> A collaborative work is done by [Vivian Chuhan Yu (chuhany2)](https://github.com/vilavivida) and [Chenyu Zhao (chenyu5)](https://github.com/chenyuzhao98). 
 
 ### Project Overview
 
