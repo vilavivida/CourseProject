@@ -41,20 +41,26 @@ As you can see, comparing to IMDB, Rotten Tomatoes includes the majority of movi
 
 ### Ranking and Scoring
 
-We would pull user rating scores from both IMDb and Rotten Tomatoes. Due to the different rating scales used by IMDb and Rotten Tomatoes, we would first convert both scores to a *10-point scale* for the ease of comparison. We would also take the number of ratings into consideration, as larger number of ratings tends to make the overall rating more credible. Therefore, we would run *logit* function on the number of ratings, and add it as an additional weightage to the final movie score.
+We would pull user rating scores from both IMDb and Rotten Tomatoes. Due to the different rating scales used by IMDb and Rotten Tomatoes, we would first convert both scores to a *10-point scale* for the ease of comparison. We would also take the number of ratings into consideration, as larger number of ratings tends to make the overall rating more credible. Therefore, we would run *logistic regression* function on the number of ratings, and add it as an additional weightage to the final movie score.
 
 ### Present Movie Information
 
 After users indicate their moods, the program is going to look up the corresponding link to the movie page and present movie information as `Treeview`, which is a module included by the tkinter library displaying a hierarchical collection of items.<br/>
-Here is an example output of the program: <br/>
+Here is an example output of the list of recommended movies: <br/>
 
-<a href='https://postimg.cc/14PRxmrS' target='_blank'><img src='https://i.postimg.cc/6648vT78/Screen-Shot-2020-12-10-at-1-31-48-AM.png' border='0' width="590" height="450" alt='Screen-Shot-2020-12-10-at-1-31-48-AM'/></a>
+<a href='https://postimg.cc/DW34Jb9M' target='_blank'><img src='https://i.postimg.cc/W4hGyGXT/Screen-Shot-2020-12-13-at-4-16-31-PM.png' width="600" height="400" border='0' alt='Screen-Shot-2020-12-13-at-4-16-31-PM'/></a>
 
 **Note: Not every movie has all information listed. If the crawler cannot find relevant information, it will automatically fill the space with "Not Found".**
 
 ### You May Also Like...
 
 After users chose their favorite movie from the list, we would run a [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) analysis to recommend **3** similar movies based on the summary.
+
+Here is an example of movies similar to *Toy Story 4*: <br/>
+<a href='https://postimg.cc/zbXBKw00' target='_blank'><img src='https://i.postimg.cc/85L68tWQ/Screen-Shot-2020-12-13-at-4-19-55-PM.png' width="600" height="400" border='0' alt='Screen-Shot-2020-12-13-at-4-19-55-PM'/></a>
+
+### Self-evaluation
+The work is equally distributed between the two teammates, and we were able to complete our mood-based movie recommender system as intended. We chose not to build a seperate mobile application, but instead spend the time working on additional features like cosine similarity and logistic regression. In the end, we have obtained the expected outcome. 
 
 ### Environment Set-up
 Please check out `requirements.txt` for information.<br/>
@@ -67,4 +73,4 @@ The program will start running immediately.<br/>
 *The scraping process may take up to **30 seconds**. Please do not close the tkinter window when the program is running.*
 
 ### Video Presentation
-[YouTube link](https://youtu.be/ji2GY6Alf-k)
+[YouTube link](https://youtu.be/DIIRPvu-ts0)
