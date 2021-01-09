@@ -3,10 +3,6 @@
 # MovieMood
 ## CS 410 Final Project: A Mood-Based Movie Recommendation System
 
-### Team Introduction
-
-> A collaborative work is done by [Vivian Chuhan Yu (chuhany2)](https://github.com/vilavivida) and [Chenyu Zhao (chenyu5)](https://github.com/chenyuzhao98). 
-
 ### Project Overview
 
 This is a Python-based movie recommendation system that implemented text-retrieval techniques and Graphical User Interface. One special thing about this system is that its recommendations were tailored around users' emotion of the moment. There are so many existing movie recommender systems available on the market, but only a small number of them were designed based on users' psychological needs. The main objective of this project is to fill this gap by making traditional recommender system more user-driven. <br>
